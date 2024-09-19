@@ -3,17 +3,16 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import * as React from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
 
 export default function Home() {
   const [message, setMessage] = useState("");
 
   // サーバーからメッセージを取得
   useEffect(() => {
-    fetch("http://localhost:8080/hello?name=YourName")
-      .then((response) => response.text())
-      .then((data) => setMessage(data))
-      .catch((error) => console.error("Error fetching data:", error));
+    // fetch("http://localhost:8080/hello?name=YourName")
+    //   .then((response) => response.text())
+    //   .then((data) => setMessage(data))
+    //   .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   return (
@@ -33,7 +32,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="../images/darts.png"
+              src="/images/darts.png"
               alt="Darts Image"
               width={20}
               height={20}

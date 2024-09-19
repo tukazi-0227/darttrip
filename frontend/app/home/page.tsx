@@ -10,10 +10,10 @@ export default function Home() {
 
   // サーバーからメッセージを取得
   useEffect(() => {
-    fetch("http://localhost:8080/hello?name=YourName")
-      .then((response) => response.text())
-      .then((data) => setMessage(data))
-      .catch((error) => console.error("Error fetching data:", error));
+    // fetch("http://localhost:8080/hello?name=YourName")
+    //   .then((response) => response.text())
+    //   .then((data) => setMessage(data))
+    //   .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   return (

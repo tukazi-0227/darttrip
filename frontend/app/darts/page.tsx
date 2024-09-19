@@ -1,14 +1,14 @@
 'use client';  // これを最初に追加
 
 import { InfoIcon } from '@chakra-ui/icons';
-import { Box, Checkbox, CheckboxGroup, Flex, HStack, Icon, Spacer, Stack, VStack, Button, useToast, Text } from '@chakra-ui/react';
+import { Box, Checkbox, CheckboxGroup, Flex, HStack, Icon, Spacer, Stack, VStack, Button, Text } from '@chakra-ui/react';
 import Image from "next/image";
 import { useEffect, useState} from "react";
 
 export default function Home() {
   const [message, setMessage] = useState("");
   const [checkedItems, setCheckedItems] = useState<string[]>([]);
-  const toast = useToast();
+  
 
   const allRegions = [
     'zenkoku',
@@ -50,12 +50,46 @@ export default function Home() {
     setCheckedItems([]);
   };
 
+  {/* 出発ボタンのハンドラ */ }
+  const handleSubmit = async () => {
+    const regionData = {
+      zenkoku: checkedItems.includes('zenkoku'),
+      hokkaido: checkedItems.includes('hokkaido'),
+      tohoku: checkedItems.includes('tohoku'),
+      kanto: checkedItems.includes('kanto'),
+      tyubu: checkedItems.includes('tyubu'),
+      kinki: checkedItems.includes('kinki'),
+      tyugoku: checkedItems.includes('tyugoku'),
+      shikoku: checkedItems.includes('shikoku'),
+      kyusyu: checkedItems.includes('kyusyu'),
+      okinawa: checkedItems.includes('okinawa')
+    };
+  
+    try {
+      const response = await fetch("http://localhost:8080/api/regions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(regionData)
+      });
+  
+      if (response.ok) {
+        console.log("送信成功");
+      } else {
+        console.log("送信失敗");
+      }
+    } catch (error) {
+      console.error("Error submitting data:", error);
+    }
+  };
+
   // サーバーからメッセージを取得
   useEffect(() => {
-    fetch("http://localhost:8080/hello?name=YourName")
-      .then((response) => response.text())
-      .then((data) => setMessage(data))
-      .catch((error) => console.error("Error fetching data:", error));
+  //   fetch("http://localhost:8080/hello?name=YourName")
+  //     .then((response) => response.text())
+  //     .then((data) => setMessage(data))
+  //     .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   return (
@@ -115,14 +149,7 @@ export default function Home() {
           bg={"rgb(0,200,0)"}
           color="white"
           size="md"
-          onClick={() => {
-            toast({
-              title: "楽しんでね！",
-              status: "success",
-              duration: 2000,
-              isClosable: true,
-            });
-          }}
+          onClick={handleSubmit}
         >
           出発する
         </Button>
