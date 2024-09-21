@@ -1,8 +1,9 @@
 'use client';  // これを最初に追加
 
-import { useState, useEffect } from "react";
+import { Box, Button, Flex, IconButton, Input, Spacer, Text, VStack, InputGroup, InputRightElement } from '@chakra-ui/react';
+import { SearchIcon } from "@chakra-ui/icons";
 import Image from "next/image";
-import * as React from 'react'
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [message, setMessage] = useState("");
@@ -16,39 +17,76 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        {/* サーバーから取得したメッセージを表示 */}
-        <div className="text-center">
-          <p className="text-lg font-semibold">Message from Spring Boot:</p>
-          <p className="text-sm">{message}</p>
-        </div>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <VStack mt={32} mb={20}>
+      <Flex width="80%">
+        <VStack>
+          <Box
+            width="300px"
+            align="flex-start"
           >
             <Image
               src="/images/darts.png"
               alt="Darts Image"
-              width={20}
-              height={20}
+              width={300}
+              height={300}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-    </div>
+          </Box>
+          <Box width="300px">
+            <Button
+              as="a"
+              href='/darts'
+              top="100%"             // 上から50%の位置に配置
+              left="50%"            // 左から50%の位置に配置
+              transform="translate(-50%, -50%)"  // 中央に揃えるための変換
+              bg={"rgb(0,150,0)"}
+              color="white"
+              size="lg"
+              fontSize="20px"
+              px={8}           // 左右のパディングを大きくする
+              py={6}
+              style={{ borderRadius: "12px" }}
+            >
+              旅に出る
+            </Button>
+          </Box>
+        </VStack>
+        <Spacer />
+        {/* スクロール可能なボックス */}
+        <Box
+          align="flex-end"
+          h="400px" // 固定高さ
+          w="50%" // 幅を広げる
+          overflowY="auto" // 縦方向にスクロールを許可
+          p={4}
+          borderWidth="1px"
+          borderRadius="md"
+          shadow="md"
+        >
+          <Text flex="1" textAlign="center" fontSize="2xl" fontWeight="bold" mb={3}>
+            旅のすすめ
+          </Text>
+          <InputGroup mb={3}>
+            <Input
+              placeholder="Search"
+            />
+            <InputRightElement>
+              <IconButton
+                aria-label="Search api"
+                icon={<SearchIcon />}
+                size="sm"
+              />
+            </InputRightElement>
+          </InputGroup>
+          {0 === 0 ? (
+            <Text fontSize="lg" color="gray.500">
+              No data found.
+            </Text>
+          ) : (
+            <VStack spacing={4} align="start">
+            </VStack>
+          )}
+        </Box>
+      </Flex>
+    </VStack>
   );
 }

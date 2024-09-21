@@ -40,7 +40,7 @@ const Header = () => {
             )}
           </HStack>
           {/* ナビゲーションメニュー */}
-          <Flex>
+          {/* <Flex>
             {pathname !== "/" && (
               <Link
                 href="/"
@@ -52,7 +52,7 @@ const Header = () => {
                 Logout
               </Link>
             )}
-          </Flex>
+          </Flex> */}
         </Flex>
       </Container>
     </Box>

@@ -1,102 +1,19 @@
-2024-09-19T21:36:30.417+09:00  INFO 7632 --- [dirttrip] [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 7632 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
-2024-09-19T21:36:30.423+09:00  INFO 7632 --- [dirttrip] [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-19T21:36:30.535+09:00  INFO 7632 --- [dirttrip] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-19T21:36:30.535+09:00  INFO 7632 --- [dirttrip] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-19T21:36:32.542+09:00  INFO 7632 --- [dirttrip] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-19T21:36:32.570+09:00  INFO 7632 --- [dirttrip] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-19T21:36:32.570+09:00  INFO 7632 --- [dirttrip] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-19T21:36:32.679+09:00  INFO 7632 --- [dirttrip] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-19T21:36:32.679+09:00  INFO 7632 --- [dirttrip] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2144 ms
-2024-09-19T21:36:33.354+09:00  INFO 7632 --- [dirttrip] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-09-19T21:36:33.432+09:00  INFO 7632 --- [dirttrip] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-19T21:36:33.461+09:00  INFO 7632 --- [dirttrip] [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 3.853 seconds (process running for 4.769)
-2024-09-19T21:44:43.202+09:00  INFO 16912 --- [dirttrip] [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 16912 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
-2024-09-19T21:44:43.218+09:00  INFO 16912 --- [dirttrip] [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-19T21:44:43.378+09:00  INFO 16912 --- [dirttrip] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-19T21:44:43.378+09:00  INFO 16912 --- [dirttrip] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-19T21:44:45.319+09:00  WARN 16912 --- [dirttrip] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[student.darttrip]' package. Please check your configuration.
-2024-09-19T21:44:46.144+09:00  INFO 16912 --- [dirttrip] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-19T21:44:46.172+09:00  INFO 16912 --- [dirttrip] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-19T21:44:46.172+09:00  INFO 16912 --- [dirttrip] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-19T21:44:46.280+09:00  INFO 16912 --- [dirttrip] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-19T21:44:46.281+09:00  INFO 16912 --- [dirttrip] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2903 ms
-2024-09-19T21:44:47.170+09:00  INFO 16912 --- [dirttrip] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-19T21:44:47.894+09:00  INFO 16912 --- [dirttrip] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11b6a0cd
-2024-09-19T21:44:47.898+09:00  INFO 16912 --- [dirttrip] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-19T21:44:48.071+09:00  WARN 16912 --- [dirttrip] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #1 of file [C:\Users\大塚\Documents\workspace\darttrip\build\resources\main\data.sql]: insert into m_region (region_id, region_name, prefecture_name) values ('01', '北海道', '北海道')
-2024-09-19T21:44:48.071+09:00  INFO 16912 --- [dirttrip] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-09-19T21:44:48.082+09:00  INFO 16912 --- [dirttrip] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-09-19T21:44:48.087+09:00  INFO 16912 --- [dirttrip] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-09-19T21:44:48.110+09:00  INFO 16912 --- [dirttrip] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-09-21T13:48:45.112+09:00  INFO 20372 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 20372 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in C:\Users\大塚\Documents\workspace\darttrip)
+2024-09-21T13:48:45.129+09:00  INFO 20372 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T13:48:45.815+09:00  INFO 20372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-21T13:48:45.817+09:00  INFO 20372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-21T13:48:48.791+09:00  INFO 20372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T13:48:48.822+09:00  INFO 20372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T13:48:48.824+09:00  INFO 20372 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-21T13:48:48.930+09:00  INFO 20372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T13:48:48.930+09:00  INFO 20372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3111 ms
+2024-09-21T13:48:49.920+09:00  INFO 20372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-21T13:48:51.158+09:00  WARN 20372 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute database script
+2024-09-21T13:48:51.166+09:00  INFO 20372 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-21T13:48:51.201+09:00  INFO 20372 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-19T21:44:48.158+09:00 ERROR 16912 --- [dirttrip] [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #1 of file [C:\Users\大塚\Documents\workspace\darttrip\build\resources\main\data.sql]: insert into m_region (region_id, region_name, prefecture_name) values ('01', '北海道', '北海道')
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
-	at student.darttrip.DirttripApplication.main(DirttripApplication.java:10) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
-Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of file [C:\Users\大塚\Documents\workspace\darttrip\build\resources\main\data.sql]: insert into m_region (region_id, region_name, prefecture_name) values ('01', '北海道', '北海道')
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:102) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:77) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 23 common frames omitted
-Caused by: java.sql.SQLSyntaxErrorException: Table 'regiondb.m_region' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:770) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	... 33 common frames omitted
-
-2024-09-19T22:32:18.968+09:00  INFO 20680 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 20680 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
-2024-09-19T22:32:18.977+09:00  INFO 20680 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-19T22:32:19.101+09:00  INFO 20680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-19T22:32:19.101+09:00  INFO 20680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-19T22:32:20.866+09:00  WARN 20680 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[student.darttrip]' package. Please check your configuration.
-2024-09-19T22:32:23.947+09:00  INFO 20680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-19T22:32:23.982+09:00  INFO 20680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-19T22:32:23.986+09:00  INFO 20680 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-19T22:32:24.084+09:00  INFO 20680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-19T22:32:24.084+09:00  INFO 20680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4983 ms
-2024-09-19T22:32:24.840+09:00  INFO 20680 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-19T22:32:26.550+09:00  WARN 20680 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute database script
-2024-09-19T22:32:26.568+09:00  INFO 20680 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-09-19T22:32:26.640+09:00  INFO 20680 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-19T22:32:26.722+09:00 ERROR 20680 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-09-21T13:48:51.254+09:00 ERROR 20372 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute database script
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
@@ -138,9 +55,11 @@ Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to 
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84) ~[spring-jdbc-6.1.12.jar:6.1.12]
 	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:52) ~[spring-jdbc-6.1.12.jar:6.1.12]
 	... 31 common frames omitted
-Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'develop'@'%' to database 'dirttripdb'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-j-8.3.0.jar:8.3.0]
@@ -156,160 +75,140 @@ Caused by: java.sql.SQLSyntaxErrorException: Access denied for user 'develop'@'%
 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118) ~[spring-jdbc-6.1.12.jar:6.1.12]
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81) ~[spring-jdbc-6.1.12.jar:6.1.12]
 	... 32 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
-2024-09-19T22:34:24.942+09:00  INFO 12500 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 12500 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
-2024-09-19T22:34:24.949+09:00  INFO 12500 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-19T22:34:25.044+09:00  INFO 12500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-19T22:34:25.045+09:00  INFO 12500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-19T22:34:26.508+09:00  WARN 12500 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[student.darttrip]' package. Please check your configuration.
-2024-09-19T22:34:27.357+09:00  INFO 12500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-19T22:34:27.374+09:00  INFO 12500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-19T22:34:27.382+09:00  INFO 12500 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-19T22:34:27.470+09:00  INFO 12500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-19T22:34:27.473+09:00  INFO 12500 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2426 ms
-2024-09-19T22:34:28.120+09:00  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-19T22:34:28.554+09:00  INFO 12500 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@408f25ac
-2024-09-19T22:34:28.558+09:00  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-19T22:34:28.635+09:00  WARN 12500 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #2 of file [C:\Users\大塚\Documents\workspace\darttrip\build\resources\main\schema.sql]: create table m_regioin ( region_id int not null, 'ID' region_name varchar(20), '地方名' prefecture_name varchar(20) '県名' ) comment '地方マスタ'
-2024-09-19T22:34:28.638+09:00  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-09-19T22:34:28.647+09:00  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-09-19T22:34:28.652+09:00  INFO 12500 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-09-19T22:34:28.675+09:00  INFO 12500 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:104) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:165) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:88) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:935) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:805) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	... 45 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:62) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	... 48 common frames omitted
 
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-19T22:34:28.716+09:00 ERROR 12500 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #2 of file [C:\Users\大塚\Documents\workspace\darttrip\build\resources\main\schema.sql]: create table m_regioin ( region_id int not null, 'ID' region_name varchar(20), '地方名' prefecture_name varchar(20) '県名' ) comment '地方マスタ'
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
-	at student.darttrip.DirttripApplication.main(DirttripApplication.java:10) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
-Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of file [C:\Users\大塚\Documents\workspace\darttrip\build\resources\main\schema.sql]: create table m_regioin ( region_id int not null, 'ID' region_name varchar(20), '地方名' prefecture_name varchar(20) '県名' ) comment '地方マスタ'
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 23 common frames omitted
-Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''ID' region_name varchar(20), '地方名' prefecture_name varchar(20) '県名' )' at line 1
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:770) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	... 33 common frames omitted
-
-2024-09-19T22:36:07.775+09:00  INFO 17612 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 17612 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
-2024-09-19T22:36:07.786+09:00  INFO 17612 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-19T22:36:07.885+09:00  INFO 17612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-19T22:36:07.885+09:00  INFO 17612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-19T22:36:09.155+09:00  WARN 17612 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[student.darttrip]' package. Please check your configuration.
-2024-09-19T22:36:09.957+09:00  INFO 17612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-19T22:36:09.994+09:00  INFO 17612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-19T22:36:09.995+09:00  INFO 17612 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-19T22:36:10.108+09:00  INFO 17612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-19T22:36:10.110+09:00  INFO 17612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2225 ms
-2024-09-19T22:36:10.880+09:00  INFO 17612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-19T22:36:11.404+09:00  INFO 17612 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e8e2c59
-2024-09-19T22:36:11.409+09:00  INFO 17612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-19T22:36:11.471+09:00  WARN 17612 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #2 of file [C:\Users\大塚\Documents\workspace\darttrip\build\resources\main\schema.sql]: create table m_region ( region_id int not null, 'ID' region_name varchar(20), '地方名' prefecture_name varchar(20) '県名' ) comment '地方マスタ'
-2024-09-19T22:36:11.476+09:00  INFO 17612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-09-19T22:36:11.482+09:00  INFO 17612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-09-19T22:36:11.489+09:00  INFO 17612 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-09-19T22:36:11.511+09:00  INFO 17612 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-19T22:36:11.553+09:00 ERROR 17612 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute SQL script statement #2 of file [C:\Users\大塚\Documents\workspace\darttrip\build\resources\main\schema.sql]: create table m_region ( region_id int not null, 'ID' region_name varchar(20), '地方名' prefecture_name varchar(20) '県名' ) comment '地方マスタ'
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
-	at student.darttrip.DirttripApplication.main(DirttripApplication.java:10) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
-Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of file [C:\Users\大塚\Documents\workspace\darttrip\build\resources\main\schema.sql]: create table m_region ( region_id int not null, 'ID' region_name varchar(20), '地方名' prefecture_name varchar(20) '県名' ) comment '地方マスタ'
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66) ~[spring-boot-3.3.3.jar:3.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 23 common frames omitted
-Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''ID' region_name varchar(20), '地方名' prefecture_name varchar(20) '県名' )' at line 1
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:770) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	... 33 common frames omitted
-
-2024-09-19T22:37:38.969+09:00  INFO 17412 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 17412 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
-2024-09-19T22:37:38.981+09:00  INFO 17412 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-19T22:37:39.086+09:00  INFO 17412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-19T22:37:39.087+09:00  INFO 17412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-19T22:37:40.284+09:00  WARN 17412 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[student.darttrip]' package. Please check your configuration.
-2024-09-19T22:37:41.077+09:00  INFO 17412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-19T22:37:41.105+09:00  INFO 17412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-19T22:37:41.106+09:00  INFO 17412 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-19T22:37:41.209+09:00  INFO 17412 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-19T22:37:41.211+09:00  INFO 17412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2120 ms
-2024-09-19T22:37:41.889+09:00  INFO 17412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-19T22:37:42.353+09:00  INFO 17412 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e8e2c59
-2024-09-19T22:37:42.356+09:00  INFO 17412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-19T22:37:42.817+09:00  INFO 17412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-09-19T22:37:42.889+09:00  INFO 17412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-19T22:37:42.908+09:00  INFO 17412 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 4.888 seconds (process running for 6.121)
+2024-09-21T13:52:51.167+09:00  INFO 9240 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 9240 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
+2024-09-21T13:52:51.173+09:00  INFO 9240 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T13:52:51.265+09:00  INFO 9240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-21T13:52:51.267+09:00  INFO 9240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-21T13:52:53.873+09:00  INFO 9240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T13:52:53.915+09:00  INFO 9240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T13:52:53.915+09:00  INFO 9240 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-21T13:52:54.058+09:00  INFO 9240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T13:52:54.060+09:00  INFO 9240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2791 ms
+2024-09-21T13:52:54.276+09:00  INFO 9240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-21T13:52:57.380+09:00  INFO 9240 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ec3c8e4
+2024-09-21T13:52:57.395+09:00  INFO 9240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-21T13:53:00.004+09:00  INFO 9240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T13:53:00.202+09:00  INFO 9240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T13:53:00.237+09:00  INFO 9240 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 10.059 seconds (process running for 11.142)
+2024-09-21T13:53:07.417+09:00  INFO 9240 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T13:53:07.418+09:00  INFO 9240 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T13:53:07.421+09:00  INFO 9240 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-21T13:55:49.992+09:00  WARN 9240 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'regionNames' for method parameter type List is not present]
+2024-09-21T14:08:19.917+09:00  INFO 16984 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 16984 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
+2024-09-21T14:08:19.923+09:00  INFO 16984 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T14:08:20.079+09:00  INFO 16984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-21T14:08:20.079+09:00  INFO 16984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-21T14:08:22.933+09:00  INFO 16984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T14:08:22.949+09:00  INFO 16984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T14:08:22.949+09:00  INFO 16984 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-21T14:08:23.049+09:00  INFO 16984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T14:08:23.049+09:00  INFO 16984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2970 ms
+2024-09-21T14:08:23.270+09:00  INFO 16984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-21T14:08:24.072+09:00  INFO 16984 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@165dfd91
+2024-09-21T14:08:24.077+09:00  INFO 16984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-21T14:08:25.701+09:00  INFO 16984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T14:08:25.753+09:00  INFO 16984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T14:08:25.766+09:00  INFO 16984 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 7.075 seconds (process running for 7.929)
+2024-09-21T14:09:26.877+09:00  INFO 16984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T14:09:26.877+09:00  INFO 16984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T14:09:26.880+09:00  INFO 16984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-21T14:22:30.751+09:00  INFO 12816 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 12816 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
+2024-09-21T14:22:30.759+09:00  INFO 12816 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T14:22:30.880+09:00  INFO 12816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-21T14:22:30.885+09:00  INFO 12816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-21T14:22:33.670+09:00  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T14:22:33.693+09:00  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T14:22:33.693+09:00  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-21T14:22:34.265+09:00  INFO 12816 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T14:22:34.266+09:00  INFO 12816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3377 ms
+2024-09-21T14:22:34.467+09:00  INFO 12816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-21T14:22:35.233+09:00  INFO 12816 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@154f668
+2024-09-21T14:22:35.238+09:00  INFO 12816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-21T14:22:36.887+09:00  INFO 12816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T14:22:36.993+09:00  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T14:22:37.018+09:00  INFO 12816 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 7.153 seconds (process running for 7.893)
+2024-09-21T14:22:52.872+09:00  INFO 12816 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T14:22:52.873+09:00  INFO 12816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T14:22:52.875+09:00  INFO 12816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-21T14:44:22.734+09:00  INFO 24780 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 24780 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
+2024-09-21T14:44:22.766+09:00  INFO 24780 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T14:44:22.866+09:00  INFO 24780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-21T14:44:22.866+09:00  INFO 24780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-21T14:44:25.116+09:00  INFO 24780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T14:44:25.144+09:00  INFO 24780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T14:44:25.144+09:00  INFO 24780 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-21T14:44:25.247+09:00  INFO 24780 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T14:44:25.247+09:00  INFO 24780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2381 ms
+2024-09-21T14:44:25.415+09:00  INFO 24780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-21T14:44:26.073+09:00  INFO 24780 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@116953b2
+2024-09-21T14:44:26.077+09:00  INFO 24780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-21T14:44:27.441+09:00  INFO 24780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T14:44:27.523+09:00  INFO 24780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T14:44:27.547+09:00  INFO 24780 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 5.726 seconds (process running for 6.632)
+2024-09-21T14:45:49.507+09:00  INFO 24780 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T14:45:49.507+09:00  INFO 24780 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T14:45:49.522+09:00  INFO 24780 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-21T15:10:44.926+09:00  INFO 7320 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 7320 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
+2024-09-21T15:10:44.931+09:00  INFO 7320 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T15:10:45.057+09:00  INFO 7320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-21T15:10:45.057+09:00  INFO 7320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-21T15:10:48.096+09:00  INFO 7320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T15:10:48.126+09:00  INFO 7320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T15:10:48.127+09:00  INFO 7320 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-21T15:10:48.220+09:00  INFO 7320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T15:10:48.220+09:00  INFO 7320 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3161 ms
+2024-09-21T15:10:48.392+09:00  INFO 7320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-21T15:10:49.053+09:00  INFO 7320 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4987114e
+2024-09-21T15:10:49.057+09:00  INFO 7320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-21T15:10:50.933+09:00  INFO 7320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T15:10:51.029+09:00  INFO 7320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T15:10:51.057+09:00  INFO 7320 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 7.122 seconds (process running for 7.782)
+2024-09-21T15:12:07.486+09:00  INFO 7320 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T15:12:07.486+09:00  INFO 7320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T15:12:07.486+09:00  INFO 7320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-21T15:16:12.530+09:00  INFO 14192 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 14192 (C:\Users\大塚\Documents\workspace\darttrip\build\classes\java\main started by 大塚 in c:\Users\大塚\Documents\workspace\darttrip)
+2024-09-21T15:16:12.546+09:00  INFO 14192 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T15:16:12.646+09:00  INFO 14192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-21T15:16:12.647+09:00  INFO 14192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-21T15:16:14.531+09:00  INFO 14192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T15:16:14.557+09:00  INFO 14192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T15:16:14.557+09:00  INFO 14192 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-21T15:16:14.640+09:00  INFO 14192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T15:16:14.641+09:00  INFO 14192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1993 ms
+2024-09-21T15:16:14.774+09:00  INFO 14192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-21T15:16:15.355+09:00  INFO 14192 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41b7ff9c
+2024-09-21T15:16:15.360+09:00  INFO 14192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-21T15:16:16.504+09:00  INFO 14192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-21T15:16:16.560+09:00  INFO 14192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T15:16:16.578+09:00  INFO 14192 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 4.89 seconds (process running for 5.746)
+2024-09-21T15:16:30.505+09:00  INFO 14192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-21T15:16:30.505+09:00  INFO 14192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-21T15:16:30.505+09:00  INFO 14192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

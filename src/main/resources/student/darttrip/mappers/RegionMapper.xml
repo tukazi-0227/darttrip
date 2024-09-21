@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="student.darttrip.mappers.RegionMapper">
+	<!-- 複数の地方名に対応する県リストを取得するクエリ -->
+	<select id="selectByRegions" resultType="java.lang.String">
+		SELECT prefecture_name
+		FROM m_region
+		WHERE
+		<if test="regionNames != null and regionNames.size() > 0">
+			region_name IN
+			<foreach item="regionName" collection="regionNames" open="(" separator="," close=")">
+				#{regionName}
+			</foreach>
+		</if>
+	</select>
+</mapper>
