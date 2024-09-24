@@ -4,9 +4,7 @@ import {
   Container,
   Flex,
   HStack,
-  Link,
-  Text,
-  Image,
+  Link
 } from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
 

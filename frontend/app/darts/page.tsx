@@ -98,7 +98,7 @@ export default function Home() {
         <VStack>
           <Box
             width="400px"
-            align="flex-start"
+            alignItems="flex-start"
           >
             <Image
               src="/images/map-japan.png"

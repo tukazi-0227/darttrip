@@ -1,29 +1,31 @@
-2024-09-21T13:48:45.112+09:00  INFO 20372 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 20372 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in C:\Users\‘å’Ë\Documents\workspace\darttrip)
-2024-09-21T13:48:45.129+09:00  INFO 20372 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-21T13:48:45.815+09:00  INFO 20372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-21T13:48:45.817+09:00  INFO 20372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-21T13:48:48.791+09:00  INFO 20372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-21T13:48:48.822+09:00  INFO 20372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-21T13:48:48.824+09:00  INFO 20372 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-21T13:48:48.930+09:00  INFO 20372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-21T13:48:48.930+09:00  INFO 20372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3111 ms
-2024-09-21T13:48:49.920+09:00  INFO 20372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-21T13:48:51.158+09:00  WARN 20372 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute database script
-2024-09-21T13:48:51.166+09:00  INFO 20372 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-09-21T13:48:51.201+09:00  INFO 20372 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-09-24T15:06:58.308+09:00  INFO 13260 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 13260 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in C:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T15:06:58.322+09:00  INFO 13260 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T15:06:58.412+09:00  INFO 13260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T15:06:58.414+09:00  INFO 13260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T15:07:00.386+09:00  INFO 13260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T15:07:00.413+09:00  INFO 13260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T15:07:00.414+09:00  INFO 13260 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T15:07:00.501+09:00  INFO 13260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T15:07:00.502+09:00  INFO 13260 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2087 ms
+2024-09-24T15:07:00.656+09:00  INFO 13260 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T15:07:01.827+09:00  WARN 13260 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dartController': Unsatisfied dependency expressed through field 'regionMapper': Error creating bean with name 'regionMapper' defined in file [C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main\student\darttrip\mappers\RegionMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+2024-09-24T15:07:01.835+09:00  INFO 13260 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-24T15:07:01.860+09:00  INFO 13260 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-09-21T13:48:51.254+09:00 ERROR 20372 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2024-09-24T15:07:01.926+09:00 ERROR 13260 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute database script
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dartController': Unsatisfied dependency expressed through field 'regionMapper': Error creating bean with name 'regionMapper' defined in file [C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main\student\darttrip\mappers\RegionMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
@@ -40,6 +42,34 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'regionMapper' defined in file [C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main\student\darttrip\mappers\RegionMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute database script
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 38 common frames omitted
 Caused by: org.springframework.jdbc.datasource.init.UncategorizedScriptException: Failed to execute database script
 	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:67) ~[spring-jdbc-6.1.12.jar:6.1.12]
 	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87) ~[spring-boot-3.3.3.jar:3.3.3]
@@ -50,11 +80,11 @@ Caused by: org.springframework.jdbc.datasource.init.UncategorizedScriptException
 	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66) ~[spring-boot-3.3.3.jar:3.3.3]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
-	... 23 common frames omitted
+	... 47 common frames omitted
 Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84) ~[spring-jdbc-6.1.12.jar:6.1.12]
 	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:52) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	... 31 common frames omitted
+	... 55 common frames omitted
 Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -74,7 +104,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160) ~[spring-jdbc-6.1.12.jar:6.1.12]
 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118) ~[spring-jdbc-6.1.12.jar:6.1.12]
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	... 32 common frames omitted
+	... 56 common frames omitted
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -91,7 +121,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:935) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:805) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	... 45 common frames omitted
+	... 69 common frames omitted
 Caused by: java.net.ConnectException: Connection refused: getsockopt
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
@@ -101,114 +131,192 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:62) ~[mysql-connector-j-8.3.0.jar:8.3.0]
-	... 48 common frames omitted
+	... 72 common frames omitted
 
-2024-09-21T13:52:51.167+09:00  INFO 9240 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 9240 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
-2024-09-21T13:52:51.173+09:00  INFO 9240 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-21T13:52:51.265+09:00  INFO 9240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-21T13:52:51.267+09:00  INFO 9240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-21T13:52:53.873+09:00  INFO 9240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-21T13:52:53.915+09:00  INFO 9240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-21T13:52:53.915+09:00  INFO 9240 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-21T13:52:54.058+09:00  INFO 9240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-21T13:52:54.060+09:00  INFO 9240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2791 ms
-2024-09-21T13:52:54.276+09:00  INFO 9240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-21T13:52:57.380+09:00  INFO 9240 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ec3c8e4
-2024-09-21T13:52:57.395+09:00  INFO 9240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-21T13:53:00.004+09:00  INFO 9240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-09-21T13:53:00.202+09:00  INFO 9240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-21T13:53:00.237+09:00  INFO 9240 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 10.059 seconds (process running for 11.142)
-2024-09-21T13:53:07.417+09:00  INFO 9240 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-21T13:53:07.418+09:00  INFO 9240 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-21T13:53:07.421+09:00  INFO 9240 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-09-21T13:55:49.992+09:00  WARN 9240 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'regionNames' for method parameter type List is not present]
-2024-09-21T14:08:19.917+09:00  INFO 16984 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 16984 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
-2024-09-21T14:08:19.923+09:00  INFO 16984 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-21T14:08:20.079+09:00  INFO 16984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-21T14:08:20.079+09:00  INFO 16984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-21T14:08:22.933+09:00  INFO 16984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-21T14:08:22.949+09:00  INFO 16984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-21T14:08:22.949+09:00  INFO 16984 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-21T14:08:23.049+09:00  INFO 16984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-21T14:08:23.049+09:00  INFO 16984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2970 ms
-2024-09-21T14:08:23.270+09:00  INFO 16984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-21T14:08:24.072+09:00  INFO 16984 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@165dfd91
-2024-09-21T14:08:24.077+09:00  INFO 16984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-21T14:08:25.701+09:00  INFO 16984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-09-21T14:08:25.753+09:00  INFO 16984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-21T14:08:25.766+09:00  INFO 16984 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 7.075 seconds (process running for 7.929)
-2024-09-21T14:09:26.877+09:00  INFO 16984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-21T14:09:26.877+09:00  INFO 16984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-21T14:09:26.880+09:00  INFO 16984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2024-09-21T14:22:30.751+09:00  INFO 12816 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 12816 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
-2024-09-21T14:22:30.759+09:00  INFO 12816 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-21T14:22:30.880+09:00  INFO 12816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-21T14:22:30.885+09:00  INFO 12816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-21T14:22:33.670+09:00  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-21T14:22:33.693+09:00  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-21T14:22:33.693+09:00  INFO 12816 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-21T14:22:34.265+09:00  INFO 12816 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-21T14:22:34.266+09:00  INFO 12816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3377 ms
-2024-09-21T14:22:34.467+09:00  INFO 12816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-21T14:22:35.233+09:00  INFO 12816 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@154f668
-2024-09-21T14:22:35.238+09:00  INFO 12816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-21T14:22:36.887+09:00  INFO 12816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-09-21T14:22:36.993+09:00  INFO 12816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-21T14:22:37.018+09:00  INFO 12816 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 7.153 seconds (process running for 7.893)
-2024-09-21T14:22:52.872+09:00  INFO 12816 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-21T14:22:52.873+09:00  INFO 12816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-21T14:22:52.875+09:00  INFO 12816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-09-21T14:44:22.734+09:00  INFO 24780 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 24780 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
-2024-09-21T14:44:22.766+09:00  INFO 24780 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-21T14:44:22.866+09:00  INFO 24780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-21T14:44:22.866+09:00  INFO 24780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-21T14:44:25.116+09:00  INFO 24780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-21T14:44:25.144+09:00  INFO 24780 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-21T14:44:25.144+09:00  INFO 24780 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-21T14:44:25.247+09:00  INFO 24780 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-21T14:44:25.247+09:00  INFO 24780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2381 ms
-2024-09-21T14:44:25.415+09:00  INFO 24780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-21T14:44:26.073+09:00  INFO 24780 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@116953b2
-2024-09-21T14:44:26.077+09:00  INFO 24780 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-21T14:44:27.441+09:00  INFO 24780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-09-21T14:44:27.523+09:00  INFO 24780 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-21T14:44:27.547+09:00  INFO 24780 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 5.726 seconds (process running for 6.632)
-2024-09-21T14:45:49.507+09:00  INFO 24780 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-21T14:45:49.507+09:00  INFO 24780 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-21T14:45:49.522+09:00  INFO 24780 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-09-21T15:10:44.926+09:00  INFO 7320 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 7320 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
-2024-09-21T15:10:44.931+09:00  INFO 7320 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-21T15:10:45.057+09:00  INFO 7320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-21T15:10:45.057+09:00  INFO 7320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-21T15:10:48.096+09:00  INFO 7320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-21T15:10:48.126+09:00  INFO 7320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-21T15:10:48.127+09:00  INFO 7320 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-21T15:10:48.220+09:00  INFO 7320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-21T15:10:48.220+09:00  INFO 7320 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3161 ms
-2024-09-21T15:10:48.392+09:00  INFO 7320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-21T15:10:49.053+09:00  INFO 7320 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4987114e
-2024-09-21T15:10:49.057+09:00  INFO 7320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-21T15:10:50.933+09:00  INFO 7320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-09-21T15:10:51.029+09:00  INFO 7320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-21T15:10:51.057+09:00  INFO 7320 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 7.122 seconds (process running for 7.782)
-2024-09-21T15:12:07.486+09:00  INFO 7320 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-21T15:12:07.486+09:00  INFO 7320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-21T15:12:07.486+09:00  INFO 7320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-09-21T15:16:12.530+09:00  INFO 14192 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 14192 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
-2024-09-21T15:16:12.546+09:00  INFO 14192 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-09-21T15:16:12.646+09:00  INFO 14192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-09-21T15:16:12.647+09:00  INFO 14192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-09-21T15:16:14.531+09:00  INFO 14192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-21T15:16:14.557+09:00  INFO 14192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-21T15:16:14.557+09:00  INFO 14192 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-21T15:16:14.640+09:00  INFO 14192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-21T15:16:14.641+09:00  INFO 14192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1993 ms
-2024-09-21T15:16:14.774+09:00  INFO 14192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-21T15:16:15.355+09:00  INFO 14192 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41b7ff9c
-2024-09-21T15:16:15.360+09:00  INFO 14192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-21T15:16:16.504+09:00  INFO 14192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-09-21T15:16:16.560+09:00  INFO 14192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-21T15:16:16.578+09:00  INFO 14192 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 4.89 seconds (process running for 5.746)
-2024-09-21T15:16:30.505+09:00  INFO 14192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-21T15:16:30.505+09:00  INFO 14192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-21T15:16:30.505+09:00  INFO 14192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-24T15:26:36.377+09:00  INFO 15132 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 15132 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T15:26:36.384+09:00  INFO 15132 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T15:26:36.486+09:00  INFO 15132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T15:26:36.488+09:00  INFO 15132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T15:26:38.895+09:00  INFO 15132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T15:26:38.921+09:00  INFO 15132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T15:26:38.922+09:00  INFO 15132 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T15:26:39.011+09:00  INFO 15132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T15:26:39.012+09:00  INFO 15132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2522 ms
+2024-09-24T15:26:39.206+09:00  INFO 15132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T15:26:39.888+09:00  INFO 15132 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ec3c8e4
+2024-09-24T15:26:39.895+09:00  INFO 15132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T15:26:41.344+09:00  INFO 15132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T15:26:41.399+09:00  INFO 15132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T15:26:41.415+09:00  INFO 15132 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 7.577 seconds (process running for 8.683)
+2024-09-24T15:35:32.968+09:00  INFO 11328 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 11328 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T15:35:32.975+09:00  INFO 11328 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T15:35:33.071+09:00  INFO 11328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T15:35:33.073+09:00  INFO 11328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T15:35:35.008+09:00  INFO 11328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T15:35:35.040+09:00  INFO 11328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T15:35:35.041+09:00  INFO 11328 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T15:35:35.138+09:00  INFO 11328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T15:35:35.139+09:00  INFO 11328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2061 ms
+2024-09-24T15:35:35.286+09:00  INFO 11328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T15:35:36.111+09:00  INFO 11328 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ce6abe6
+2024-09-24T15:35:36.116+09:00  INFO 11328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T15:35:37.676+09:00  INFO 11328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T15:35:37.727+09:00  INFO 11328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T15:35:37.741+09:00  INFO 11328 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 5.839 seconds (process running for 7.023)
+2024-09-24T15:36:28.837+09:00  INFO 11328 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T15:36:28.839+09:00  INFO 11328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T15:36:28.841+09:00  INFO 11328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T15:36:28.881+09:00  WARN 11328 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-09-24T15:39:42.633+09:00  WARN 11328 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-09-24T15:41:26.648+09:00  INFO 15424 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 15424 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T15:41:26.665+09:00  INFO 15424 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T15:41:26.768+09:00  INFO 15424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T15:41:26.772+09:00  INFO 15424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T15:41:28.793+09:00  INFO 15424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T15:41:28.820+09:00  INFO 15424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T15:41:28.822+09:00  INFO 15424 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T15:41:28.921+09:00  INFO 15424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T15:41:28.922+09:00  INFO 15424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2149 ms
+2024-09-24T15:41:29.097+09:00  INFO 15424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T15:41:29.720+09:00  INFO 15424 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4987114e
+2024-09-24T15:41:29.724+09:00  INFO 15424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T15:41:31.211+09:00  INFO 15424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T15:41:31.293+09:00  INFO 15424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T15:41:31.310+09:00  INFO 15424 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 5.598 seconds (process running for 6.528)
+2024-09-24T15:41:35.951+09:00  INFO 15424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T15:41:35.953+09:00  INFO 15424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T15:41:35.957+09:00  INFO 15424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-24T15:41:36.015+09:00  WARN 15424 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-09-24T15:45:50.961+09:00  INFO 18884 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 18884 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T15:45:50.968+09:00  INFO 18884 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T15:45:51.061+09:00  INFO 18884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T15:45:51.062+09:00  INFO 18884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T15:45:53.325+09:00  INFO 18884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T15:45:53.364+09:00  INFO 18884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T15:45:53.366+09:00  INFO 18884 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T15:45:53.490+09:00  INFO 18884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T15:45:53.491+09:00  INFO 18884 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2427 ms
+2024-09-24T15:45:53.690+09:00  INFO 18884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T15:45:54.513+09:00  INFO 18884 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58298907
+2024-09-24T15:45:54.518+09:00  INFO 18884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T15:45:56.380+09:00  INFO 18884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T15:45:56.443+09:00  INFO 18884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T15:45:56.462+09:00  INFO 18884 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 6.372 seconds (process running for 7.725)
+2024-09-24T15:46:10.584+09:00  INFO 18884 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T15:46:10.585+09:00  INFO 18884 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T15:46:10.587+09:00  INFO 18884 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-24T15:46:34.625+09:00  INFO 1688 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 1688 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T15:46:34.633+09:00  INFO 1688 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T15:46:34.722+09:00  INFO 1688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T15:46:34.723+09:00  INFO 1688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T15:46:36.767+09:00  INFO 1688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T15:46:36.795+09:00  INFO 1688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T15:46:36.796+09:00  INFO 1688 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T15:46:36.904+09:00  INFO 1688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T15:46:36.907+09:00  INFO 1688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2182 ms
+2024-09-24T15:46:37.103+09:00  INFO 1688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T15:46:37.563+09:00  INFO 1688 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@211373f2
+2024-09-24T15:46:37.568+09:00  INFO 1688 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T15:46:38.820+09:00  INFO 1688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T15:46:38.918+09:00  INFO 1688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T15:46:38.946+09:00  INFO 1688 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 5.205 seconds (process running for 6.245)
+2024-09-24T15:46:45.686+09:00  INFO 1688 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T15:46:45.688+09:00  INFO 1688 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T15:46:45.690+09:00  INFO 1688 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-24T16:03:25.648+09:00  WARN 1688 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String student.darttrip.controllers.DartController.searchLocal(student.darttrip.beans.Region)]
+2024-09-24T16:04:52.140+09:00  WARN 1688 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String student.darttrip.controllers.DartController.searchLocal(student.darttrip.beans.Region)]
+2024-09-24T16:04:55.093+09:00  WARN 1688 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String student.darttrip.controllers.DartController.searchLocal(student.darttrip.beans.Region)]
+2024-09-24T16:05:06.762+09:00  WARN 1688 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String student.darttrip.controllers.DartController.searchLocal(student.darttrip.beans.Region)]
+2024-09-24T16:09:01.723+09:00  INFO 20220 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 20220 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T16:09:01.735+09:00  INFO 20220 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T16:09:01.812+09:00  INFO 20220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T16:09:01.814+09:00  INFO 20220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T16:09:04.463+09:00  INFO 20220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T16:09:04.498+09:00  INFO 20220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T16:09:04.501+09:00  INFO 20220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T16:09:04.651+09:00  INFO 20220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T16:09:04.652+09:00  INFO 20220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2834 ms
+2024-09-24T16:09:04.901+09:00  INFO 20220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T16:09:05.831+09:00  INFO 20220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58fd22c3
+2024-09-24T16:09:05.837+09:00  INFO 20220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T16:09:08.796+09:00  INFO 20220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T16:09:08.872+09:00  INFO 20220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T16:09:08.890+09:00  INFO 20220 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 8.008 seconds (process running for 8.751)
+2024-09-24T16:11:16.605+09:00  INFO 20220 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T16:11:16.607+09:00  INFO 20220 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T16:11:16.611+09:00  INFO 20220 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-24T16:11:16.706+09:00  WARN 20220 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'query' for method parameter type String is not present]
+2024-09-24T17:24:06.539+09:00  INFO 1216 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 1216 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T17:24:06.545+09:00  INFO 1216 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T17:24:06.647+09:00  INFO 1216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T17:24:06.648+09:00  INFO 1216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T17:24:09.477+09:00  INFO 1216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T17:24:09.509+09:00  INFO 1216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T17:24:09.511+09:00  INFO 1216 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T17:24:09.617+09:00  INFO 1216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T17:24:09.618+09:00  INFO 1216 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2967 ms
+2024-09-24T17:24:09.793+09:00  INFO 1216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T17:24:10.577+09:00  INFO 1216 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@455effbb
+2024-09-24T17:24:10.582+09:00  INFO 1216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T17:24:12.263+09:00  INFO 1216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T17:24:12.314+09:00  INFO 1216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T17:24:12.328+09:00  INFO 1216 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 6.848 seconds (process running for 7.589)
+2024-09-24T17:24:45.378+09:00  INFO 1216 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T17:24:45.380+09:00  INFO 1216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T17:24:45.382+09:00  INFO 1216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-24T17:40:57.384+09:00  INFO 8356 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 8356 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T17:40:57.398+09:00  INFO 8356 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T17:40:57.490+09:00  INFO 8356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T17:40:57.491+09:00  INFO 8356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T17:41:00.413+09:00  INFO 8356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T17:41:00.444+09:00  INFO 8356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T17:41:00.445+09:00  INFO 8356 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T17:41:00.548+09:00  INFO 8356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T17:41:00.549+09:00  INFO 8356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3057 ms
+2024-09-24T17:41:00.757+09:00  INFO 8356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T17:41:01.563+09:00  INFO 8356 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ec3c8e4
+2024-09-24T17:41:01.569+09:00  INFO 8356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T17:41:03.016+09:00  INFO 8356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T17:41:03.075+09:00  INFO 8356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T17:41:03.090+09:00  INFO 8356 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 6.473 seconds (process running for 7.135)
+2024-09-24T17:41:50.016+09:00  INFO 8356 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T17:41:50.017+09:00  INFO 8356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T17:41:50.020+09:00  INFO 8356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-24T18:33:50.424+09:00  INFO 18200 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 18200 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T18:33:50.431+09:00  INFO 18200 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T18:33:50.687+09:00  INFO 18200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T18:33:50.689+09:00  INFO 18200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T18:33:53.100+09:00  INFO 18200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T18:33:53.148+09:00  INFO 18200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T18:33:53.149+09:00  INFO 18200 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T18:33:53.255+09:00  INFO 18200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T18:33:53.256+09:00  INFO 18200 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2565 ms
+2024-09-24T18:33:53.425+09:00  INFO 18200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T18:33:54.208+09:00  INFO 18200 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58298907
+2024-09-24T18:33:54.214+09:00  INFO 18200 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T18:33:58.036+09:00  INFO 18200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T18:33:58.097+09:00  INFO 18200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T18:33:58.116+09:00  INFO 18200 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 8.791 seconds (process running for 9.796)
+2024-09-24T18:34:19.917+09:00  INFO 18200 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T18:34:19.918+09:00  INFO 18200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T18:34:19.922+09:00  INFO 18200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-24T18:35:20.256+09:00  INFO 5308 --- [restartedMain] student.darttrip.DirttripApplication     : Starting DirttripApplication using Java 17.0.12 with PID 5308 (C:\Users\‘å’Ë\Documents\workspace\darttrip\build\classes\java\main started by ‘å’Ë in c:\Users\‘å’Ë\Documents\workspace\darttrip)
+2024-09-24T18:35:20.262+09:00  INFO 5308 --- [restartedMain] student.darttrip.DirttripApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-24T18:35:20.366+09:00  INFO 5308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-24T18:35:20.367+09:00  INFO 5308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-24T18:35:22.615+09:00  INFO 5308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-24T18:35:22.648+09:00  INFO 5308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-24T18:35:22.649+09:00  INFO 5308 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-24T18:35:22.757+09:00  INFO 5308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-24T18:35:22.758+09:00  INFO 5308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2389 ms
+2024-09-24T18:35:22.927+09:00  INFO 5308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-24T18:35:23.533+09:00  INFO 5308 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9a430f4
+2024-09-24T18:35:23.538+09:00  INFO 5308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-24T18:35:26.388+09:00  INFO 5308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-24T18:35:26.516+09:00  INFO 5308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-24T18:35:26.544+09:00  INFO 5308 --- [restartedMain] student.darttrip.DirttripApplication     : Started DirttripApplication in 7.174 seconds (process running for 8.133)
+2024-09-24T18:35:39.526+09:00  INFO 5308 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-24T18:35:39.528+09:00  INFO 5308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-24T18:35:39.532+09:00  INFO 5308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-24T18:38:53.242+09:00  INFO 5308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-24T18:38:53.321+09:00  INFO 5308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

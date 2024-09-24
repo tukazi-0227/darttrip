@@ -7,12 +7,17 @@ import java.util.Map;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import jakarta.servlet.http.HttpSession;
 import student.darttrip.beans.Region;
@@ -25,7 +30,7 @@ public class DartController {
     @Autowired
     RegionMapper regionMapper;
 
-    // POSTリクエストで地方情報と名前を受け取るエンドポイント
+    // POSTリクエストで地方情報と名前を受け取るAPI
     @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
     @PostMapping("/regions")
     public Region updateRegions(@RequestBody Region region, HttpSession session) {
@@ -63,7 +68,7 @@ public class DartController {
         return region;
     }
 
-    // Getリクエストで地方情報を取得してランダムな県を返すエンドポイント
+    // Getリクエストで地方情報を取得してランダムな県を返すAPI
     @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
     @GetMapping("/getDartResult")
     public String dartResult(HttpSession session) {
@@ -86,5 +91,33 @@ public class DartController {
         }
 
         return "指定された地方に県が存在しません。";
+    }
+
+    // YahooローカルサーチAPI
+    @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+    @GetMapping("/searchLocal")
+    public String searchLocal(@RequestParam("query") String query, @RequestParam(value = "sort", required = false) String sort) {
+        String apiUrl = "https://map.yahooapis.jp/search/local/V1/localSearch";
+        String clientId = "dj00aiZpPWZYN21sNldOMmVFdCZzPWNvbnN1bWVyc2VjcmV0Jng9OGI-"; // clientID
+        //boolean image = true;
+
+        // パラメータ設定
+        String params = "?appid=" + clientId + "&query=" + query + "&output=json" ;
+
+        if (sort != null && !sort.isEmpty()) {
+            params += "&sort=" + sort;
+        }
+
+        // RestTemplateを使用してAPIにリクエスト
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> response = restTemplate.exchange(apiUrl + params, HttpMethod.GET, null, String.class);
+        
+
+        // ステータスがOKなら結果を返す
+        if (response.getStatusCode() == HttpStatus.OK) {
+            return response.getBody();
+        }
+
+        return "API呼び出しに失敗しました。";
     }
 }
