@@ -1,12 +1,11 @@
-'use client';  // これを最初に追加
+'use client';
 
 import { InfoIcon } from '@chakra-ui/icons';
-import { Box, Checkbox, CheckboxGroup, Flex, HStack, Icon, Spacer, Stack, VStack, Button, Text } from '@chakra-ui/react';
+import { Box, Button, Checkbox, CheckboxGroup, Flex, HStack, Icon, Spacer, Stack, Text, VStack } from '@chakra-ui/react';
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
-  const [message, setMessage] = useState("");
   const [checkedItems, setCheckedItems] = useState<string[]>([]);
   const [selectedPrefecture, setSelectedPrefecture] = useState('');
 
@@ -27,9 +26,11 @@ export default function Home() {
   {/* チェックボックスの制御 */ }
   const handleCheckboxChange = (selectedItems: string[]) => {
     if (selectedItems.includes('zenkoku')) {
+
       // 「全国」が選択された場合、すべての地方を選択
       setCheckedItems(allRegions);
     } else {
+      
       // 「全国」が選択されていない場合
       const isAllSelected = individualRegions.every(region => selectedItems.includes(region));
       if (isAllSelected) {

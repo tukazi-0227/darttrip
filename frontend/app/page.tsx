@@ -143,7 +143,7 @@ export default function Home() {
               aria-label="Search api"
               icon={<SearchIcon />}
               size="lg"
-              onClick={handleSearch}  // 検索ボタンがクリックされたときにAPI呼び出し
+              onClick={handleSearch}  // 検索ボタンでAPI呼び出し
             />
           </HStack>
           {Array.isArray(searchResult) && searchResult.length > 0 ? (
@@ -182,18 +182,6 @@ export default function Home() {
                     Googleマップで見る
                   </a>
                 </Box>
-                {/* 右側にLeadImageを表示
-                {item?.Property?.LeadImage && (
-                  <Box ml={4}>
-                    <Image
-                      src={item.Property.LeadImage}
-                      alt={item.Name || "画像"}
-                      width={150}  // 画像の幅を指定
-                      height={100} // 画像の高さを指定
-                      objectFit="cover"
-                    />
-                  </Box>
-                )} */}
               </Flex>
             ))
           ) : (

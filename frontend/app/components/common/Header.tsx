@@ -1,10 +1,11 @@
 "use client";
+
 import {
   Box,
   Container,
   Flex,
   HStack,
-  Link
+  Link,
 } from "@chakra-ui/react";
 import { usePathname } from "next/navigation";
 
@@ -27,7 +28,7 @@ const Header = () => {
           <HStack spacing={4}>
             {pathname !== "/login" && (
               <Link
-                href="/home"
+                href="/"
                 color="white"
                 mx={4}
                 fontWeight="bold"
@@ -37,23 +38,10 @@ const Header = () => {
               </Link>
             )}
           </HStack>
-          {/* ナビゲーションメニュー */}
-          {/* <Flex>
-            {pathname !== "/" && (
-              <Link
-                href="/"
-                color="white"
-                mx={4}
-                fontWeight="bold"
-                fontSize={14}
-              >
-                Logout
-              </Link>
-            )}
-          </Flex> */}
         </Flex>
       </Container>
     </Box>
   );
 };
+
 export default Header;
