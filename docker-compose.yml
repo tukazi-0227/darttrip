@@ -11,8 +11,8 @@ services:
       MYSQL_USER: develop
       MYSQL_PASSWORD: develop
       TZ: Asia/Tokyo
-    ports:
-      - "3307:3306"
+    # ports:
+      # - "3307:3306"
     volumes:
       - db-data:/var/lib/mysql
 
