@@ -1,20 +1,32 @@
-# ベースイメージとしてNode.jsを使用
+# Build Stage
+FROM node:18-alpine AS builder
+
+# 作業ディレクトリを設定
+WORKDIR /app
+
+# package.json と package-lock.json をコピー
+COPY package.json package-lock.json* ./
+
+# 依存関係をインストール
+RUN npm install
+
+# アプリケーションのソースコードをコピー
+COPY . .
+
+# Next.js アプリケーションをビルド
+RUN npm run build
+
+# Production Stage
 FROM node:18-alpine
 
 # 作業ディレクトリを設定
 WORKDIR /app
 
-# package.jsonとpackage-lock.json（またはyarn.lock）をコピー
-COPY package.json package-lock.json* ./
+# ビルド成果物のみをコピー
+COPY --from=builder /app ./
 
-# 依存関係をインストール
+# 依存関係のインストール（productionのみ）
 RUN npm install --production
-
-# アプリケーションのソースコードをコピー
-COPY . .
-
-# Next.jsアプリケーションをビルド
-RUN npm run build
 
 # ポート3000を公開
 EXPOSE 3000
