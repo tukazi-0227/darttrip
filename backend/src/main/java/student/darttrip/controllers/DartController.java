@@ -23,6 +23,7 @@ import jakarta.servlet.http.HttpSession;
 import student.darttrip.beans.Region;
 import student.darttrip.mappers.RegionMapper;
 
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 @RestController
 @RequestMapping("/api")
 public class DartController {
@@ -31,7 +32,6 @@ public class DartController {
     RegionMapper regionMapper;
 
     // POSTリクエストで地方情報と名前を受け取るAPI
-    @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
     @PostMapping("/regions")
     public Region updateRegions(@RequestBody Region region, HttpSession session) {
         // regionListを取得
@@ -69,7 +69,6 @@ public class DartController {
     }
 
     // Getリクエストで地方情報を取得してランダムな県を返すAPI
-    @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
     @GetMapping("/getDartResult")
     public String dartResult(HttpSession session) {
         // セッションからregionListを取得
@@ -94,7 +93,6 @@ public class DartController {
     }
 
     // YahooローカルサーチAPI
-    @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
     @GetMapping("/searchLocal")
     public String searchLocal(@RequestParam("query") String query, @RequestParam(value = "sort", required = false) String sort) {
         String apiUrl = "https://map.yahooapis.jp/search/local/V1/localSearch";

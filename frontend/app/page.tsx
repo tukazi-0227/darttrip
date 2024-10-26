@@ -4,11 +4,12 @@ import { SearchIcon } from "@chakra-ui/icons";
 import { Box, Button, Flex, HStack, IconButton, Select, Spacer, Text, VStack } from '@chakra-ui/react';
 import Image from "next/image";
 import { useState } from "react";
+import { Genre, SearchResultItem } from '../types';
 
 export default function Home() {
   const [region, setRegion] = useState("");
   const [category, setCategory] = useState("");
-  const [searchResult, setSearchResult] = useState<any[]>([]);
+  const [searchResult, setSearchResult] = useState<SearchResultItem[]>([]);
 
   const handleSearch = () => {
     const query = `${region}\u3000${category}`;  // 全角スペースを使用
@@ -147,7 +148,7 @@ export default function Home() {
             />
           </HStack>
           {Array.isArray(searchResult) && searchResult.length > 0 ? (
-            searchResult.map((item: any, index: number) => (
+            searchResult.map((item: SearchResultItem, index: number) => (
               <Flex key={index} p={3} borderWidth="1px" borderRadius="md" w="100%" justifyContent="space-between" alignItems="center">
                 {/* 左側のテキスト情報 */}
                 <Box>
@@ -161,7 +162,7 @@ export default function Home() {
                   </Text>
                   {/* ジャンル */}
                   <Text>
-                    ジャンル: {item?.Property?.Genre?.map((genre: any) => genre.Name).join(", ") || "ジャンル不明"}
+                    ジャンル: {item?.Property?.Genre?.map((genre: Genre) => genre.Name).join(", ") || "ジャンル不明"}
                   </Text>
                   {/* 住所 */}
                   <Text>
