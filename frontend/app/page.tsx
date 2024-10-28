@@ -179,8 +179,9 @@ export default function Home() {
                     Tel: {item?.Property?.Tel1 || "電話番号なし"}
                   </Text>
                   {/* Googleマップリンク */}
-                  <a href={`https://www.google.com/maps?q=${item?.Geometry?.Coordinates}`} target="_blank" rel="noopener noreferrer">
-                    Googleマップで見る
+                  <a href={`https://www.google.com/maps?q=${encodeURIComponent(`${item?.Name} ${item?.Property?.Address}`)}`} 
+                  target="_blank" rel="noopener noreferrer" style={{ color: 'blue', textDecoration: 'underline' }}>
+                    Googleマップ
                   </a>
                 </Box>
               </Flex>
